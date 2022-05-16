@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+*,
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+h1 {
+  color: #333;
+}
+.container {
+  padding-top: 10%;
+  padding-left: 10%;
+}
+input[type="text"] {
+  border: none;
+  border-bottom: 2px dashed #ccc;
+  border-radius: 0px;
+  padding-left: 0;
+  transition: 0.2s ease-in-out;
+  background-color: transparent;
+}
+input[type="text"]:focus {
+  box-shadow: none;
+  border-bottom-style: solid;
+  transform: scale(1.005);
+  background-color: transparent;
+}
+.btn {
+  border-radius: 0px;
+  background-color: #00bfff;
+  border: none;
+  padding: 7px 30px;
+}
+.btn-primary:active:focus,
+.btn:focus {
+  box-shadow: none;
+  background-color: none;
+}
+.fa {
+  color: tomato;
+}
+.fa:hover {
+  cursor: pointer;
+}
+.todo p {
+  color: #333;
+}
+input[type="checkbox"] {
+  width: 1.3em;
+  height: 1.3em;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 2px solid #ddd;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  margin-right: 10px;
+  position: relative;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "";
+  /* background: url(http://clipart-library.com/images/zTX5ykpLc.png) top center
+    no-repeat; */
+  width: 80%;
+  height: 80%;
+  margin-top: 10%;
+  margin-left: 10%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 99999999;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+input[type="checkbox"]:checked {
+  border-color: #ccc;
+}
